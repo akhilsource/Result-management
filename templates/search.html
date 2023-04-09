@@ -1,0 +1,35 @@
+<!DOCTYPE html>{% extends "layout.html" %} {% block main %} {% if marks=="hello" %}
+<form method="post" action="/search">
+    <div class="form-group" align="center">
+        <input type="text" name="regd_search" autofocus class="form-control" placeholder="enter the registration number  you want to Search">
+    </div>
+    <div class="form-group" align="center">
+        <button class="btn btn-primary" autofocus type="submit">Search</button>
+    </div>
+</form>
+{% else %}
+<table class="table table-striped">
+    <tbody>
+        <tr>
+            <th>Regd</th>
+            <th>Sem</th>
+            <th>Sub1</th>
+            <th>Sub2</th>
+            <th>Sub3</th>
+            <th>Percentage</th>
+        </tr>
+        {% for d in marks %}
+
+        <tr>
+            <td>{{d[0]}}</td>
+            <td>{{d[1]}}</td>
+            <td>{{d[2]}}</td>
+            <td>{{d[3]}}</td>
+            <td>{{d[4]}}</td>
+            <td>{{d[5]}}</td>
+            {% endfor %}
+        </tr>
+
+    </tbody>
+</table>
+{% endif %} {% endblock %}

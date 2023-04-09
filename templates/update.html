@@ -1,0 +1,21 @@
+<!DOCTYPE html>{% extends "layout.html" %} {% block main %}
+<form method="post" action="/update">
+    <div class="form-group" align="center">
+        <input type="text" name="regd_update" autofocus class="form-control" placeholder="enter the registration number on whose number you want to update">
+    </div>
+    <select align="center" class="form-control" name="sub_update">
+        <option value="sub1">sub1</option>
+        <option value="sub2">sub2</option>
+        <option value="sub3">sub3</option>
+    </select>
+    <div class="form-group" align="center">
+        <input type="text" name="updated_value" autofocus class="form-control" placeholder="updated marks">
+    </div>
+    <div class="form-group" align="center">
+        <input type="text" name="sem" autofocus class="form-control" placeholder="enter semster">
+    </div>
+    <div class="form-group" align="center">
+        <button class="btn btn-primary" autofocus type="submit">update</button>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>{% extends "layout.html" %} {% block main %}
+
+<head>
+    <title>register</title>
+</head>
+<div class="container">
+    <form method="post" action="/register">
+        <div class="form-group" align="center">
+            <input type="text" name="user_name" placeholder="enter a unique username">
+        </div>
+        <div class="form-group" align="center">
+            <input type="password" name="pass" placeholder="enter a strong password">
+        </div>
+        <div class="form-group" align="center">
+            <input type="password" name="cnf_pass" placeholder="confirm password">
+        </div>
+        <div class="form-group" align="center">
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</div> {% endblock %}

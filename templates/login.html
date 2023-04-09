@@ -1,0 +1,23 @@
+<!DOCTYPE html>{% extends "layout.html" %} {% block main %}
+
+<head>
+    <link rel="s
+    tylesheet" href="D:\my project cs50\templates\style.css">
+    <title>login</title>
+</head>
+<div id="login">
+    <form action="/" method="post">
+
+        <div class="form-group" align="center">
+            <input autofocus type="text" name="username" autocomplete="off" id="username" placeholder="Username">
+        </div>
+        <div class="form-group" align="center">
+            <input width="25" autofocus type="password" autocomplete="off" name="password" placeholder="Password">
+        </div>
+        <div align="center" vertical-align="center">
+            <button class="btn btn-primary" type="submit" id="login">submit</button>
+        </div>
+    </form>
+
+</div>
+{% endblock %}

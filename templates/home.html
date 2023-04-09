@@ -1,0 +1,27 @@
+<!DOCTYPE html>{% extends "layout.html" %} {% block main %}
+<table class="table table-striped">
+    <tbody>
+        <tr>
+            <th>Regd</th>
+            <th>Sem</th>
+            <th>Sub1</th>
+            <th>Sub2</th>
+            <th>Sub3</th>
+            <th>Percentage</th>
+        </tr>
+        {% for i in marks %}
+
+        <tr>
+
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+            <td>{{i[5]}}</td>
+            {% endfor %}
+        </tr>
+
+    </tbody>
+</table>
+{% endblock %}

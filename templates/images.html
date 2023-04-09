@@ -1,0 +1,6 @@
+<!DOCTYPE html>{% extends "layout.html" %} {% block main %}
+<form action="/images" method="post" enctype="multipart/form-data">
+    <input type="file" name="images">
+    <button type="submit">submit</button>
+</form>
+{% if d!="hello" %} <img src="D:\my project cs50\templates\images\images.jpg" alt="hello"> {% endif %} {% endblock %}
